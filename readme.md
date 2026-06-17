@@ -19,6 +19,3 @@ Contains results describing genomic modules identified in both COPSAC isolates a
 
 ### `05.cross-cohorts-metagenomes`
 Contains metagenomic strain-tracking results generated using the same strain-level reference database applied to the COPSAC metagenomes. These analyses were performed across independent cohorts to evaluate the reproducibility of strain dominance patterns.
-
-### `06.code_visualization`
-Contains scripts, processed data, and intermediate files used to generate the figures and visualizations presented in the manuscript.

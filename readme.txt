@@ -1,0 +1,2 @@
+00.New_hc1100.txt -- computed in this study by collecting NCBI complete E. coli genomes, representative HC1100 Enterobase genomes and our isolates, generating the new HC1100 clusters. 
+00.code.sh -- for the pipeline producing the newly classified HC1100 clusters. 

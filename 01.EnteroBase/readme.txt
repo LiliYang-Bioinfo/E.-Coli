@@ -1,0 +1,2 @@
+01.Enterobase_7MLST.txt -- downloaded from the EnteroBase database, including the MLST information from seven marker genes, computed by EnteroBase
+02.Enterobase_HCcluster.txt -- downloaded from the EnteroBase database, including the cgMLST information, especially the HC1100 cluster information. It was computed by EnteroBase, where the HC1100 id was different with the newly generated in this study. 

@@ -1,4 +1,4 @@
-## `00.assembly.sh`
+## `00.assembly&mobileOG.sh`
 Scripts for genome assembly, quality control, and annotation of long-read sequencing data. This workflow generates high-quality genome assemblies and predicts genomic features, including coding sequences and functional annotations.
 
 ## `01.hit_modules_scripts`

@@ -1,4 +1,38 @@
 ###############################################################################
+# Step 0. Genome taxonomic classification and quality control
+#
+# Verify the taxonomic identity of assembled genomes using GTDB-Tk and assess
+# genome quality using CheckM. This step confirms whether assemblies belong
+# to Escherichia coli and evaluates their completeness and contamination to
+# ensure suitability for downstream analyses.
+#
+# Input:
+#   - Assembled genomes
+#
+# Output:
+#   - GTDB taxonomic classifications
+#   - Phylogenetic placement results
+#   - Genome completeness and contamination estimates
+#   - Genome quality assessment reports
+###############################################################################
+
+# Taxonomic classification using GTDB-Tk
+gtdbtk classify_wf \
+    --genome_dir "${genome_dir}" \
+    -x fna \
+    --cpus 30 \
+    --out_dir GTDBtk_out
+
+# Genome quality assessment using CheckM
+checkm lineage_wf \
+    --tab_table \
+    -f results_checkM.txt \
+    -t 10 \
+    -x fasta \
+    "${genome}" \
+    "${CheckM}/"
+
+###############################################################################
 # Step 1. Generate cgMLST profiles using EToKi
 # - Input: genome FASTA file
 # - Reference: cgMLST reference FASTA

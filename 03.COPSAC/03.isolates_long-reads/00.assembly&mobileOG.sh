@@ -44,8 +44,7 @@ prokka "${sample}.asm.bp.p_ctg.fasta" \
   --compliant
 
 # Annotate mobile genetic element-associated genes using MobileOG-db.
-# Predicted genes are screened against the MobileOG database to identify
-# putative MGE-related genes in each genome.
+# identify MGE-related genes in each genome.
 ./mobileOGs-pl-kyanite.sh \
   -i "${sample}.fasta" \
   -d mobileOG-db_beatrix-1.6.All.dmnd \

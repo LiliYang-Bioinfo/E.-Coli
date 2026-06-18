@@ -1,3 +1,6 @@
+### `00.annotation.sh`
+Script for annotating virulence factors (VFs), antimicrobial resistance genes (ARGs), and gene modules in newly assembled genomes.
+
 ### `01.VF&ARG.xlsx`
 Functional annotations of virulence factors (VFs) and antimicrobial resistance genes (ARGs), provided in separate worksheets. The file includes:
 - Identification and annotation of virulence genes

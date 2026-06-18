@@ -61,3 +61,18 @@ straingst kmerize \
   -o "${sample}.hdf5" \
   "${sample}.clean_1.fastq.gz" \
   "${sample}.clean_2.fastq.gz"
+  
+###############################################################################
+# Strain identification and tracking using StrainGE
+#
+# Compare the sample k-mer profile against the E. coli strain reference
+# database to identify the closest matching strains present in the sample.
+# StrainGE reports strain matches and their relative abundance based on
+# k-mer similarity.
+###############################################################################
+
+straingst run \
+  -O \
+  -o "${sample}" \
+  Ecoli_pan-genome-db.hdf5 \
+  "${sample}.hdf5"
